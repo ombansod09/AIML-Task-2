@@ -54,27 +54,3 @@ The correlation heatmap provides a final guide for modeling:
     * `IsAlone` and `FamilySize` are perfectly correlated (we must drop one).
     * `Pclass` and `Fare` are strongly correlated.
 * **Conclusion**: For a simple model (like Logistic Regression), we should drop `FamilySize`, `Name`, `SibSp`, and `Parch` to avoid multicollinearity. For a tree-based model (like a Random Forest), this is less of an issue.
-
-## 3. Git Workflow
-
-To add this project to a new GitHub repository, follow these commands:
-
-```bash
-# 1. Initialize a new Git repository in your project folder
-git init -b main
-
-# 2. Add all the files (Python scripts, plots, this README) to staging
-git add .
-
-# 3. Create your first "commit" (a snapshot of your project)
-git commit -m "Initial commit: Add data, preprocessing script, and EDA"
-
-# 4. Go to GitHub and create a new, empty repository (e.g., "titanic-analysis")
-# 5. Copy the remote URL they provide. It will look like this:
-#    [https://github.com/YourUsername/titanic-analysis.git](https://github.com/YourUsername/titanic-analysis.git)
-
-# 6. Link your local repository to the remote one on GitHub
-git remote add origin [https://github.com/YourUsername/titanic-analysis.git](https://github.com/YourUsername/titanic-analysis.git)
-
-# 7. Push your "main" branch to GitHub
-git push -u origin main
